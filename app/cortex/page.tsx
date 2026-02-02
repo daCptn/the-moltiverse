@@ -6,7 +6,7 @@ import { useState, useRef, useMemo } from "react";
 import * as THREE from "three";
 
 function BrainParticles() {
-  const ref = useRef<any>();
+  const ref = useRef<any>(null);
   
   // Create a sphere of particles that we will distort into a brain-like shape
   const [sphere] = useState(() => {
